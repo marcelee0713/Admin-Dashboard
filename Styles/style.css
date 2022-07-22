@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #dfdfdf;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+main .dashboard-container {
+  grid-row: 1/3;
+  background-color: #2b2b2b;
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .dashboard-container .header-nav {
+  display: flex;
+  padding: 0.6em 1.1em;
+  font-size: 2rem;
+  font-weight: bold;
+  gap: 12px;
+  align-items: center;
+}
+main .dashboard-container .nav-container, main .dashboard-container .other-nav-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .dashboard-container .nav-item {
+  cursor: pointer;
+  padding: 0.5em 2em;
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+main .dashboard-container .nav-item:hover {
+  background-color: rgb(59, 59, 59);
+}
+main .dashboard-container .nav-item .nav-item-text {
+  font-size: 1.4rem;
+}
+main .header-container {
+  background-color: #fafafa;
+  color: #2b2b2b;
+  padding: 1.5em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0px 5px 5px 0px rgba(43, 43, 43, 0.5);
+}
+main .header-container .top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .header-container .top-header form {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+main .header-container .top-header form input[type=text] {
+  background-color: #dfdfdf;
+  border: solid 2px #2b2b2b;
+  border-radius: 20px;
+  outline: none;
+  width: 400px;
+  height: auto;
+  padding: 0.5em 1em;
+}
+main .header-container .top-header form button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+main .header-container .top-header form button i {
+  font-size: 1.5rem;
+}
+main .header-container .top-header .notif-and-profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+main .header-container .top-header .notif-and-profile i {
+  font-size: 2rem;
+}
+main .header-container .top-header .notif-and-profile .profile-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+main .header-container .top-header .notif-and-profile .notif-profile img {
+  width: 48px;
+  height: auto;
+}
+main .header-container .below-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .header-container .below-header .profile-introduction {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+main .header-container .below-header .profile-introduction .pfp-intro img {
+  width: 72px;
+  height: auto;
+}
+main .header-container .below-header .profile-introduction .introduction-user .greet-small-text {
+  font-size: 1.2rem;
+}
+main .header-container .below-header .profile-introduction .introduction-user h3 {
+  font-size: 2rem;
+}
+main .header-container .below-header .btn-containers {
+  display: flex;
+  gap: 32px;
+}
+main .header-container .below-header .btn-containers button {
+  border: none;
+  cursor: pointer;
+  color: #fafafa;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #2b2b2b;
+  transition: 250ms ease-in;
+}
+main .header-container .below-header .btn-containers button:hover {
+  background-color: rgb(59, 59, 59);
+}
+main .content-container {
+  grid-column-start: 2;
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 1.5em;
+}
+main .content-container .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+main .content-container .projects h3 {
+  font-size: 1.4rem;
+}
+main .content-container .projects .project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5em;
+  height: 100%;
+}
+main .content-container .projects .project-container .project-items {
+  box-shadow: 0px 5px 5px 0px rgba(43, 43, 43, 0.5);
+  background-color: #fafafa;
+  padding: 1.5em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+main .content-container .projects .project-container .project-items .project-name-and-description h4 {
+  font-size: 1.5em;
+}
+main .content-container .projects .project-container .project-items .project-name-and-description .project-description {
+  font-size: 1.2em;
+}
+main .content-container .projects .project-container .project-items .project-options {
+  font-size: 1em;
+  justify-content: flex-end;
+  display: flex;
+  gap: 10px;
+}
+main .content-container .projects .project-container .project-items .project-options i {
+  font-size: 1.5em;
+}
+main .content-container .announcements-and-trendings {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+main .content-container .announcements-and-trendings .announcements {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+main .content-container .announcements-and-trendings .announcements .announcements-container {
+  border-radius: 10px;
+  padding: 1.5em;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  box-shadow: 0px 5px 5px 0px rgba(43, 43, 43, 0.5);
+}
+main .content-container .announcements-and-trendings .announcements .announcements-container .annoucements-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5px;
+}
+main .content-container .announcements-and-trendings .trendings {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  grid-column: 2;
+  grid-row: 2;
+}
+main .content-container .announcements-and-trendings .trendings .trending-container {
+  border-radius: 10px;
+  padding: 1.5em;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  box-shadow: 0px 5px 5px 0px rgba(43, 43, 43, 0.5);
+}
+main .content-container .announcements-and-trendings .trendings .trending-container .trending-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .content-container .announcements-and-trendings .trendings .trending-container .trending-item .trend-pfp img {
+  width: 64px;
+  height: auto;
+}
+main .content-container .announcements-and-trendings .trendings .trending-container .trending-item .trend-project-and-name {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5px;
+}
+main .content-container .announcements-and-trendings .trendings .trending-container .trending-item .trend-project-and-name .trend-name {
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */

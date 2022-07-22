@@ -61,12 +61,14 @@
             <div class="top-header">
                 <div class="searchbar-profile-container">
                     <form class="search-bar-form">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input id="search-bar" name="search-bar" placeholder="Search cat videos...">
+                        <button type="submit" for="search-bar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <input type="text" id="search-bar" name="search-bar" placeholder="Search cat videos...">
                     </form>
                 </div>
                 <div class="notif-and-profile">
-                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-regular fa-bell"></i>
                     <div class="notif-profile"><img src="Images/user.png" alt="User's profile picture"></div>
                     <div class="profile-name">Darcco Choco</div>
                 </div>
@@ -77,7 +79,7 @@
                         <img src="Images/user.png" alt="User's profile picture">
                     </div>
                     <div class="introduction-user">
-                        <div class="introuser-small-text">Hi there,</div>
+                        <div class="greet-small-text">Hi there,</div>
                         <h3>Darcco Choco (@darcho)</h3>
                     </div>
                 </div>
@@ -93,8 +95,10 @@
                 <h3>Your Projects</h3>
                 <div class="project-container">
                     <div class="project-items">
-                        <h4>Project Name</h4>
+                        <div class="project-name-and-description">
+                            <h4>Project Name</h4>
                         <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam accusantium odit dicta placeat in pariatur debitis enim expedita aut consectetur!</div>
+                        </div>
                         <div class="project-options">
                             <i class="fa-solid fa-heart-circle-plus"></i>
                             <i class="fa-solid fa-eye"></i>
@@ -102,8 +106,10 @@
                         </div>
                     </div>
                     <div class="project-items">
-                        <h4>Project Name</h4>
-                        <div class="project-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe itaque recusandae placeat ab sed suscipit quas doloremque.</div>
+                        <div class="project-name-and-description">
+                            <h4>Project Name</h4>
+                        <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam accusantium odit dicta placeat in pariatur debitis enim expedita aut consectetur!</div>
+                        </div>
                         <div class="project-options">
                             <i class="fa-solid fa-heart-circle-plus"></i>
                             <i class="fa-solid fa-eye"></i>
@@ -111,8 +117,10 @@
                         </div>
                     </div>
                     <div class="project-items">
-                        <h4>Project Name</h4>
-                        <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis totam voluptatibus placeat officia esse temporibus architecto optio, dolorem voluptatum?</div>
+                        <div class="project-name-and-description">
+                            <h4>Project Name</h4>
+                        <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam accusantium odit dicta placeat in pariatur debitis enim expedita aut consectetur!</div>
+                        </div>
                         <div class="project-options">
                             <i class="fa-solid fa-heart-circle-plus"></i>
                             <i class="fa-solid fa-eye"></i>
@@ -120,8 +128,10 @@
                         </div>
                     </div>
                     <div class="project-items">
-                        <h4>Project Name</h4>
-                        <div class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia atque rerum aperiam adipisci eos deserunt.</div>
+                        <div class="project-name-and-description">
+                            <h4>Project Name</h4>
+                        <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam accusantium odit dicta placeat in pariatur debitis enim expedita aut consectetur!</div>
+                        </div>
                         <div class="project-options">
                             <i class="fa-solid fa-heart-circle-plus"></i>
                             <i class="fa-solid fa-eye"></i>
@@ -129,8 +139,10 @@
                         </div>
                     </div>
                     <div class="project-items">
-                        <h4>Project Name</h4>
-                        <div class="project-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos voluptatum dolorem itaque facere!</div>
+                        <div class="project-name-and-description">
+                            <h4>Project Name</h4>
+                            <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam accusantium odit dicta placeat in pariatur debitis enim expedita aut consectetur!</div>
+                        </div>
                         <div class="project-options">
                             <i class="fa-solid fa-heart-circle-plus"></i>
                             <i class="fa-solid fa-eye"></i>
@@ -138,8 +150,10 @@
                         </div>
                     </div>
                     <div class="project-items">
-                        <h4>Project Name</h4>
-                        <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat architecto voluptatum aliquid deleniti, quasi natus aspernatur et consequuntur neque molestiae aut!</div>
+                        <div class="project-name-and-description">
+                            <h4>Project Name</h4>
+                            <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam accusantium odit dicta placeat in pariatur debitis enim expedita aut consectetur!</div>
+                        </div>
                         <div class="project-options">
                             <i class="fa-solid fa-heart-circle-plus"></i>
                             <i class="fa-solid fa-eye"></i>
@@ -148,47 +162,57 @@
                     </div>
                 </div>
             </div>
-            <div class="announcements">
-                <h3>Announcements</h3>
-                <div class="announcements-container">
-                    <div class="annoucements-item">
-                        <h4>Site Maintenance</h4>
-                        <div class="announce-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias recusandae quasi eum porro. Commodi accusantium fuga rerum? Blanditiis, voluptatibus temporibus!</div>
-                    </div>
-                    <hr>
-                    <div class="annoucements-item">
-                        <h4>Community Share Day</h4>
-                        <div class="announce-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto eaque similique modi, sunt quaerat ipsa aperiam. Aspernatur dicta amet consequatur!</div>
-                    </div>
-                    <hr>
-                    <div class="annoucements-item">
-                        <h4>Updated Privacy Policy</h4>
-                        <div class="announce-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut magnam eos possimus labore consectetur omnis harum esse? Soluta, iste necessitatibus!</div>
+            <div class="announcements-and-trendings">
+                <div class="announcements">
+                    <h3>Announcements</h3>
+                    <div class="announcements-container">
+                        <div class="annoucements-item">
+                            <h4>Site Maintenance</h4>
+                            <div class="announce-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias recusandae quasi eum porro. Commodi accusantium fuga rerum? Blanditiis, voluptatibus temporibus!</div>
+                        </div>
+                        <hr>
+                        <div class="annoucements-item">
+                            <h4>Community Share Day</h4>
+                            <div class="announce-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto eaque similique modi, sunt quaerat ipsa aperiam. Aspernatur dicta amet consequatur!</div>
+                        </div>
+                        <hr>
+                        <div class="annoucements-item">
+                            <h4>Updated Privacy Policy</h4>
+                            <div class="announce-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut magnam eos possimus labore consectetur omnis harum esse? Soluta, iste necessitatibus!</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="trendings">
-                <h3>Trending</h3>
-                <div class="trending-container">
-                    <div class="trending-item">
-                        <div class="trend-pfp"><img src="Images/bird.png" alt="Bird profile picture"></div>
-                        <div class="trend-name">@birdoo</div>
-                        <div class="trending-project">Bird Simulator</div>
-                    </div>
-                    <div class="trending-item">
-                        <div class="trend-pfp"><img src="Images/cat.png" alt="Cat profile picture"></div>
-                        <div class="trend-name">@cathy</div>
-                        <div class="trending-project">Meow Sound Board</div>
-                    </div>
-                    <div class="trending-item">
-                        <div class="trend-pfp"><img src="Images/user.png" alt="User profile picture"></div>
-                        <div class="trend-name">@darcho</div>
-                        <div class="trending-project">Celcious</div>
-                    </div>
-                    <div class="trending-item">
-                        <div class="trend-pfp"><img src="Images/dog.png" alt="Dog profile picture"></div>
-                        <div class="trend-name">@chococo</div>
-                        <div class="trending-project">Ball Chaser App</div>
+                <div class="trendings">
+                    <h3>Trending</h3>
+                    <div class="trending-container">
+                        <div class="trending-item">
+                            <div class="trend-pfp"><img src="Images/bird.png" alt="Bird profile picture"></div>
+                            <div class="trend-project-and-name">
+                                <div class="trend-name">@birdoo</div>
+                                <div class="trending-project">Bird Simulator</div>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <div class="trend-pfp"><img src="Images/cat.png" alt="Cat profile picture"></div>
+                            <div class="trend-project-and-name">
+                                <div class="trend-name">@cathy</div>
+                                <div class="trending-project">Meow Sound Board</div>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <div class="trend-pfp"><img src="Images/user.png" alt="User profile picture"></div>
+                            <div class="trend-project-and-name">
+                                <div class="trend-name">@darcho</div>
+                                <div class="trending-project">Celcious</div>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <div class="trend-pfp"><img src="Images/dog.png" alt="Dog profile picture"></div>
+                            <div class="trend-project-and-name">
+                                <div class="trend-name">@chococo</div>
+                                <div class="trending-project">Ball Chaser App</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
